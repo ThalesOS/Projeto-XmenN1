@@ -1,0 +1,125 @@
+body{
+    font-family: 'outfit', sans-serif;
+    background-image: url('../imagens/planodefundo.jpg');
+    background-repeat: no-repeat  ;
+    background-size:cover;
+    
+}
+
+.cabecalho {
+    
+    text-align: center;
+    padding: 60px 0;
+
+}
+.cabecalho h1{
+    color: #f1ecff;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.personagens-slider{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.lista-personagens {
+    width: 175px;
+    height: 400px;
+    position: relative;
+
+}
+.btn-seta {
+    background-color: #ffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.cartao{ 
+    opacity: 0;
+    height: 100%;
+    position:absolute;
+    padding: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2);
+    border-radius: 12px;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+
+}
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+.cartao .imagem-personagem {
+    width: 100%;
+    max-width: 280px;
+}
+
+.cartao .none {
+    background-color: rgba(179, 177, 185, 0,7 );
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.cartao .descricao {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+
+}
+.cartao .descricao .titulo {
+    background-color: #333333;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 11px;
+}
+.cartao .descricao .texto{
+    font-size: 14px;
+    padding: 12px;
+    text-align:left;
+    max-height: 90px;
+    overflow-y: auto;
+}
+.cartao.fundo-1 {
+    background: url('../imagens/fundo-papel-1-35x11m-cinza-claro-26.jpg')no-repeat;
+    
+}
+.cartao.fundo-2 {
+    background: url('../imagens/fundo-papel-1-35x11m-cinza-claro-26.jpg')no-repeat;
+    
+}
+.cartao.fundo-3 {
+    background: url('../imagens/fundo-papel-1-35x11m-cinza-claro-26.jpg')no-repeat;
+    
+}
+.cartao.fundo-4 {
+    background: url('../imagens/fundo-papel-1-35x11m-cinza-claro-26.jpg')no-repeat;
+    
+}
+.cartao.fundo-5 {
+    background: url('../imagens/fundo-papel-1-35x11m-cinza-claro-26.jpg')no-repeat;
+    
+}
